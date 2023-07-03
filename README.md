@@ -18,7 +18,7 @@ There are 3 individual pages to recreate, with full-screen and mobile designs sh
 
 ## Designs to be replicated:
 ### Large Screens
-![desktop design](https://github.com/wdmd2022/holbertonschool-smiling-school/blob/af930a0ae02f8b701af88f2d0be2518f257c4229/large-screens.png)
+![desktop design](https://github.com/wdmd2022/holbertonschool-smiling-school/blob/6e41141d30a6d983d2455919f3b5ea033f025610/large-screens.png)
 
 ### Small Screens
-![mobile design](https://github.com/wdmd2022/holbertonschool-smiling-school/blob/af930a0ae02f8b701af88f2d0be2518f257c4229/small-screens.png)
+![mobile design](https://github.com/wdmd2022/holbertonschool-smiling-school/blob/6e41141d30a6d983d2455919f3b5ea033f025610/small-screens.png)
