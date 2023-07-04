@@ -12,6 +12,10 @@ body {
     font-family: var(--font-family) !important;
 }
 
+.bg-barney {
+    background-color: var(--color-barney);
+}
+
 .btn {
     background-color: var(--color-barney);
     box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
@@ -35,6 +39,7 @@ body {
 	font-family: 'holberton_school-icon';
 	content: "\e911";
 	color: var(--color-white);
+    font-size: 2rem;
 }
 
 li a:hover, li a:focus {
@@ -46,11 +51,15 @@ li a:hover, li a:focus {
     color: var(--color-barney);
 }
 
+.arrow {
+    width: 2rem;
+}
+
 
 @media screen and (max-width: 575px) {
     .homey {
         background-position: center top;
-        background-size: 150vw;
+        background-size: 100vw;
     }
 }
 
