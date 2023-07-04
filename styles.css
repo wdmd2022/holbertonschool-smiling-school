@@ -48,6 +48,17 @@ body {
     background-position: center top;
     background-color: var(--color-dark);
 }
+.ofcourse {
+    background-image: url('./images/pic_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-color: var(--color-dark);
+}
+
+.home {
+    text-transform: uppercase;
+}
 
 
 .burger:before {
@@ -70,8 +81,8 @@ li a:hover, li a:focus {
     width: 2rem;
 }
 
-.opacity2 {
-    opacity: .2;
+.crying {
+    font-family: 'Coiny', sans-serif !important;
 }
 
 @media screen and (max-width: 575px) {
