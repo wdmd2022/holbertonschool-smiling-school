@@ -10,6 +10,11 @@ There are 3 individual pages to recreate, with full-screen and mobile designs sh
 - You have to use Bootstrap
 - Your styles.css must be as small as you can - you must use as much as you can Bootstrap classes
 
+## Notes about interactions:
+- Web pages must switch to the tablet version when the screen width is 768px
+= Web pages must switch to the mobile version when the screen width is 576px
+- button hover/active: opacity: 0.9
+
 ## Technologies Used
 - Google Fonts
 - JQuery 3.4.1
