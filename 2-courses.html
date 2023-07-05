@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="container-fluid ofcourse text-white">
+        <div class="container-lg">
+            <nav class="d-flex flex-column flex-sm-row pt-4">
+            <!-- now we are in the navigation bar -->
+                <div class="d-flex align-items-center flex-column flex-sm-row col-sm-6">
+                <!-- now in the div for logo/logotype -->
+                    <img class="m-2" src="./images/smile_off.png" alt="smiley logo" height="30px">
+                    <img class="m-2" src="./images/logo.png" alt="logotype" height="30px">
+                </div>
+                <!-- up next we have a burger menu (yum!) -->
+                <button class="navbar-toggler float-left position-absolute d-sm-none" type="button" data-toggle="collapse" data-target="#navlinks" aria-expanded="false" aria-label="nav hamburger">
+					<span class="burger"></span>
+				</button>
+                <!-- next we have our nav links -->
+                <div class="collapse navbar-collapse d-sm-flex col-sm-6" id="navlinks">
+					<ul class="navbar-nav text-uppercase ml-auto flex-sm-row align-items-center font-weight-bold">
+						<li class="navbar-item">
+							<a class="nav-link text-white mx-5" href="courses.html">Courses</a>
+						</li>
+						<li class="navbar-item">
+							<a class="nav-link text-white mx-5" href="pricing.html">Pricing</a>
+						</li>
+						<li class="navbar-item">
+							<a class="nav-link text-white mx-5" href="#">Login</a>
+						</li>
+					</ul>
+				</div>
+            </nav>
+            <!-- after this line we have the hero section -->
+            <div class="position-relative pt-4 pb-5">
+				<h1 class="display-5 text-center font-weight-bold crying d-none d-sm-block">« Don't cry because it's over.<br><span class="text-barney">Smile</span> because it happened. »
+				</h1>
+			</div>
+        </div>
+    </header>
+
+    <section class="container-fluid bg-barney text-white">
+        <div class="container-lg">
+            <div class="row py-5">
+                <!-- this holds the search and filters -->
+                <div class="col-lg col-sm-12 my-3">
+                    <!-- for the search -->
+                    <p class="text-uppercase">keywords</p>
+                    <div class="mt-2 d-flex border-bottom">
+                        <span class="lead holberton_school-icon-search_1 bg-lightbarney pt-2 pb-2 pl-2 tlra"></span>
+                        <input class="form-control bg-lightbarney border-left-0 border-right-0 border-top-0 pl-4 pt-2 pb-2 w-100" placeholder="Search by keywords"
+								type="text">
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 col-sm-12 my-3">
+                    <!-- for the first dropdown -->
+                    <p class="text-uppercase">topic</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle w-100 bg-lightbarney d-flex align-items-center justify-content-between rounded-0 shadow-none border-bottom border-top-0 border-left-0 border-right-0 pb-2 form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Novice
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Novice</a>
+                            <a class="dropdown-item" href="#">Intermediate</a>
+                            <a class="dropdown-item" href="#">Advanced</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-6 col-sm-12 my-3">
+                    <!-- for the second dropdown -->
+                    <p class="text-uppercase">sort by</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle w-100 bg-lightbarney d-flex align-items-center justify-content-between rounded-0 shadow-none border-bottom border-top-0 border-left-0 border-right-0 pb-2 form-control" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Most Popular
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <a class="dropdown-item" href="#">Most Popular</a>
+                            <a class="dropdown-item" href="#">Most Recent</a>
+                            <a class="dropdown-item" href="#">Most Viewed</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid bg-white">
+        <div class="container-lg flex-wrap flex-row">
+            <div>
+            <p class="text-secondary py-5">11 videos</p>
+            </div>
+            <div class="row">
+                <!-- video results go in here -->
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- video -->
+                <div class="card col-lg-3 col-md-4 col-sm-6 col-12 border-0">
+                    <img class="card-img-top" src="./images/thumbnail_1.jpg" alt="">
+                    <div class="card-body d-block">
+                        <h1 class="card-title lead font-weight-bold">Natural Smile</h1>
+                        <p class="card-text text-secondary small">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod. </p>
+                        <div class="row">
+                            <img class="rounded-circle ml-3" src="./images/profile_1.jpg" height="25px" width="25px" alt="">
+                            <img class="card-img-overlay mx-auto mb-auto smallcircle" src="./images/play.png" alt="play button">
+                            <p class="ml-3 text-barney">Phillip Massey</p>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-7">
+                                <p class="text-nowrap">
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-barney"></span>
+                                    <span class="holberton_school-icon-star text-secondary"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="text-barney text-nowrap">8 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                   
+                    
+                </div>
+                
+            </div>
+    </section>
+
+	
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+</body>
+</html>

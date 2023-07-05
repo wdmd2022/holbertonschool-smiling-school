@@ -120,7 +120,9 @@ li a:hover, li a:focus {
     .homey {
         background-size: auto;
     }
+
 }
+
 
 .form-control {
     border-top-right-radius: .5;
@@ -142,6 +144,11 @@ li a:hover, li a:focus {
 }
 .form-control:focus {
     background-color: var(--color-lightbarney) !important;
+}
+
+.smallcircle {
+    width: 35%;
+    padding-top: 15%
 }
 
 /* for the popular videos section */
