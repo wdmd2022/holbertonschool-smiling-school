@@ -6,6 +6,7 @@
     --color-white: #ffffff;
     --color-barney: #C271FF;
     --color-dark: #071629;
+    --color-lightbarney: #d296ff;
 }
 
 body {
@@ -72,10 +73,25 @@ li a:hover, li a:focus {
 	color: var(--color-barney) !important;
 }
 
+.dropdown-item:hover {
+    color: var(--color-barney) !important;
+    background-color: var(--color-white);
+}
+
 
 .text-barney {
     color: var(--color-barney);
 }
+
+.bg-lightbarney {
+    background-color: #d296ff;
+}
+
+::placeholder {
+    color: var(--color-white) !important;
+    opacity: .5 !important;
+  }
+
 
 .arrow {
     width: 2rem;
@@ -84,6 +100,11 @@ li a:hover, li a:focus {
 .crying {
     font-family: 'Coiny', sans-serif !important;
 }
+
+.opacity25 {
+    opacity: .25;
+}
+
 
 @media screen and (max-width: 575px) {
     .homey {
@@ -99,6 +120,28 @@ li a:hover, li a:focus {
     .homey {
         background-size: auto;
     }
+}
+
+.form-control {
+    border-top-right-radius: .5;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px #d296ff;
+}
+
+.tlra {
+    border-top-left-radius: .25rem;
+}
+
+.form-control:hover {
+    background-color: var(--color-lightbarney);
+}
+.form-control:active {
+    background-color: var(--color-lightbarney) !important;
+}
+.form-control:focus {
+    background-color: var(--color-lightbarney) !important;
 }
 
 /* for the popular videos section */
